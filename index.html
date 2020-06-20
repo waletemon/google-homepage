@@ -1,14 +1,110 @@
 <!DOCTYPE html>
 <html>
 
+<style>
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+li {
+    display: inline;
+}
+#nav-column {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    float:right;
+    text-align:right;
+    padding:0 30px;
+
+}
+div {
+    display: block;
+}
+
+body {
+    font-family: 'Roboto', arial, sans-serif;
+    font-size: small;
+    color:#222;
+    background: #fff;
+}
+
+#app-icon {
+max-width: 25px;
+max-height: 25px;
+}
+
+#prof-pic {
+max-width: 25px;
+max-height: 25px;
+}
+
+#container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+#logo {
+    margin-top: 109px;
+height:92px;
+width: 272px;
+
+}
+#lga {
+    margin-top: 89px;
+    height: 233px;
+}
+
+.search {
+    display: flex;
+    margin-top: -37px;
+    font-size: 16px;
+    width:584px;
+    border-radius: 24px;
+}
+
+#search-bar {
+    display:flex;
+    box-shadow: none;
+    
+    height:24px;
+    margin-top: 25px;
+    
+}
+
+</style>
+
 
 <header>
     <nav id="nav-main">
+        <div id="nav-column">
         <ul>
             <li><a class="nav-link">Gmail</a></li>
+            <li><a class="nav-link">Images</a></li>
+            <li><a class="nav-link"><img id="app-icon" src="https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_apps_48px-512.png" alt="app-icon">
+            </a></li>
+            <li><a class="nav-link"><img id="prof-pic" src="https://www.sackettwaconia.com/wp-content/uploads/default-profile.png">
+            </a></li>
         </ul>
+    </div>
     </nav>
 </header>
+
+<body>
+<div id="container">
+    <div id="lga">
+    <img id="logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
+    alt="google-image">
+</div>
+<div id="search-bar">
+    <input name="search" class="search" type="text">
+</div>
+</div>
+</body>
 
 
 </html>
