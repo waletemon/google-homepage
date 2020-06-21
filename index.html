@@ -19,7 +19,7 @@ li {
     float:right;
     text-align:right;
     padding:0 20px;
-    margin-top: 10px;
+    
 
 }
 div {
@@ -60,8 +60,10 @@ max-height: 25px;
 #glasses {
     max-width: 25px;   
     max-height: 25px;
+    display: flex;
     align-items:center;
-    margin:auto;
+    padding-right: 13px;
+    margin-top: -5px;
 }
 
 #container {
@@ -73,25 +75,29 @@ max-height: 25px;
 }
 
 #logo {
-    margin-top: 109px;
+    margin-top: 89px;
 height:92px;
 width: 272px;
 
 }
 #lga {
-    margin-top: 59px;
+    margin-top: 89px;
     height: 233px;
 }
 
 .search {
     display: flex;
-    margin-top: -37px;
-    font-size: 16px;
-    width:584px;
-    border-radius: 44px;
     flex: 100%;
-    padding:0;
-    
+    flex-wrap: wrap;
+    border:transparent;
+    height: 34px;
+    margin-top: -3px;
+}
+#search-bar-in {
+    flex: 1;
+    display:flex;
+    padding: 5px 8px 0 15px;
+    padding-left: 14px;
 }
 
 #search-bar {
@@ -99,10 +105,10 @@ width: 272px;
     flex-direction:row;
     box-shadow: none;
     box-sizing:border-box;
-    height:24px;
-    margin-top: 25px;
-    padding: 5px 8px 0 16px;
-    
+    height:44px;
+    border: 1px solid #dfe1e5;
+    width: 482px;
+    border-radius: 24px;
 }
 
 .button {
@@ -148,10 +154,11 @@ width: 272px;
     alt="google-image">
 </div>
 <div id="search-bar">
+    <div id="search-bar-in">
     <img name="glasses" id="glasses" src="https://w7.pngwing.com/pngs/817/624/png-transparent-black-magnifying-glass-illustration-magnifying-glass-icon-magnifier-s-white-glass-text-symbol.png">
     <input name="search" class="search" type="text">
 </div>
-
+</div>
 
 <div id="button-bar">
     <input class="button" type="submit" value="Google search" />
